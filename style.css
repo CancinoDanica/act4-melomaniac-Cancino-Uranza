@@ -1,0 +1,167 @@
+/* Resetting default margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-image: url('images/bk3.gif');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .navbar {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      position: fixed;
+    }
+
+    .navbar-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-logo img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .navbar-logo-text {
+      font-size: 1.5rem;
+    }
+
+    .navbar-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .navbar-links li {
+      margin-right: 20px;
+    }
+
+    .navbar-links a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .sidebar {
+      background-color: #67288E;
+      color: #fff;
+      width: 202px;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 60px;
+      padding: 20px;
+    }
+
+    .sidebar-links {
+      list-style: none;
+    }
+
+    .sidebar-links li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar-links a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .song a {
+      font-family: Arial, sans-serif; 
+      font-size: 12px; 
+    }
+    .song img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px; 
+    }
+
+    .sidebar-links a:hover {
+      color: white;
+    }
+
+    .sidebar-links .song:hover {
+      background-color: #994BD5; 
+      border-radius: 8px; 
+      padding: 10px; 
+    }
+  
+
+    .sidebar-links .active-song {
+      background-color: #994BD5; 
+      padding:10px;
+      font-size: 16px;
+    }
+
+
+    
+    .content {
+      margin-left: 220px; 
+      padding: 20px;
+      display: flex;
+      flex-direction: column; 
+    }
+
+    .music-player {
+      order: 1; 
+      padding: 15px;
+      margin: 25px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 2px solid #ccc;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.2); 
+      backdrop-filter: blur(10px); 
+      border-radius: 10px; 
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    }
+
+    .music-player .profile img {
+      width: 100px; 
+      height: 100px;
+      border-radius: 50%; 
+      margin-bottom: 10px;
+    }
+
+    .music-player .title {
+      font-size: 1.2rem; 
+      margin-bottom: 5px; 
+    }
+
+    .music-player .artist {
+      font-size: 1rem; 
+      margin-bottom: 10px; 
+    }
+
+    .music-player audio {
+      margin-top: 20px; 
+    }
+
+    .lyrics {
+      order: 2; 
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-top: 10px; 
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 600px;
+      background-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px); 
+      border-radius: 10px; 
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    }
+
+    .lyrics h2 {
+      margin-bottom: 10px;
+      text-align: center; 
+    }
+
+    .lyrics p {
+      text-align: center; 
+    }
